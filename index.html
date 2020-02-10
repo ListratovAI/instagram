@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>instagramm</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container containerCSS">
+    <!-- Код для header -->
+    <div class="row align-items-md-center header">
+      <div class="col-md-4 d-flex logo">
+        <a href="#" class="d-block"><img src="img/logo.png" alt=""></a>
+      </div>
+
+      <div class="col-md-4 d-flex search">
+        <input class="searchForm" type="text" placeholder="Seach">
+      </div>
+
+      <div class="col-md-4 d-flex twoButtons">
+        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=ru" type="button"
+          class="btn btn-primary getTheApp">Get the app</a>
+        <div class="logIn">
+          <a href="login.html" class="LogInBtn">Log In</a>
+        </div>
+      </div>
+    </div>
+    <!-- Тут пишем код для круглой картинки и всего что справа от неё -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="topPhoto">
+          <img src="img/myPhoto.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-8 about">
+        <div class="userName d-flex ">
+          <p>username</p>
+          <button type="button" class="btn btn-outline-primary follow">FOLLOW</button>
+        </div>
+        <div class="firstNameLastName">
+          <p><strong class="firstNameLastNameBold">Firstname Lastname</strong> Proin at iaculis arcu. Proin id mi id
+            dolor aliquet facilisis <br>
+            <a id="test" a = "1" href="#" >www.website.com</a></p>
+        </div>
+        <div class="d-flex">
+          <div class="pofofo">
+            <strong>870</strong> posts
+          </div>
+          <div class="pofofo">
+            <strong>496</strong> followers
+          </div>
+          <div class="pofofo">
+            <strong>112</strong> following
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Код для девяти картинок -->
+    <div class="row photoTop">
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="one" href="#" class="boxForPic" data-toggle="modal" data-target="#ModalOne">
+          <img class="pictures" src="img/1.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="2" href="#" class="boxForPic" data-toggle="modal" data-target="#ModalTwo"><img class="pictures"
+            src="img/2.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="3" href="#" class="boxForPic" data-toggle="modal" data-target="#ModalThree"><img class="pictures"
+            src="img/3.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+    </div>
+    <div class="row photo">
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="4" a = 1 href="#" class="boxForPic" data-toggle="modal" data-target="#ModalFour"><img class="pictures"
+            src="img/4.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="5" a = 2 href="#" class="boxForPic" data-toggle="modal" data-target="#ModalFive"><img class="pictures"
+            src="img/5.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="6" href="#" class="boxForPic" data-toggle="modal" data-target="#ModalSix"><img class="pictures"
+            src="img/6.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+    </div>
+    <div class="row photo">
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="7" href="#" class="boxForPic" data-toggle="modal" data-target="#ModalSeven"><img class="pictures"
+            src="img/7.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="8" href="#" class="boxForPic" data-toggle="modal" data-target="#ModalEight"><img class="pictures"
+            src="img/8.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center topBoxForPic">
+        <a id="9" href="#" class="boxForPic" data-toggle="modal" data-target="#ModalNine"><img class="pictures"
+            src="img/9.jpg" alt="">
+          <div class="shadow"></div>
+        </a>
+      </div>
+      <!-- Здесь начинается код для "карусели" -->
+      <div class="modal fade" id="ModalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- header карусели -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style= "font-family: Proxima Nova">Photo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- основной контент карусели -->
+          <div class="modal-body d-flex justify-content-center">
+            <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <!-- слайды карусели -->
+                <div class="carousel-item active">
+                  <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+                </div>
+              </div>
+              <!-- далее идут кнопки карусели -->
+              <a class="carousel-control-prev iconBox" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next iconBox" href="#carouselExampleControls" role="button" data-slide="next">
+                <span ><img class="icons" src="img/left.png" alt=""></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- тут "карусель" закончилась -->
+    </div>
+    <div class="modal fade" id="ModalTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelTwo"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelTwo" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsTwo" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item active ">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsTwo" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsTwo" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+  <div class="modal fade" id="ModalThree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelThree"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelThree" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsThree" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsThree" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsThree" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+  <div class="modal fade" id="ModalFour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelFour"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelFour" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsFour" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsFour" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsFour" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+  <div class="modal fade" id="ModalFive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelFive"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelFive" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsFive" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsFive" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsFive" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+  <div class="modal fade" id="ModalSix" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelSix"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelSix" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsSix" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsSix" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsSix" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+  <div class="modal fade" id="ModalSeven" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelSeven"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelSeven" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsSeven" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsSeven" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsSeven" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+  <div class="modal fade" id="ModalEight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelEight"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelEight" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsEight" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsEight" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsEight" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+  <div class="modal fade" id="ModalNine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelNine"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- header карусели -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelNine" style= "font-family: Proxima Nova">Photo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- основной контент карусели -->
+        <div class="modal-body d-flex justify-content-center">
+          <div id="carouselExampleControlsNine" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- слайды карусели -->
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/1_1.jpg" alt="Первый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/2_2.jpg" alt="Второй слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/3_3.jpg" alt="Третий слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/4_4.jpg" alt="Четвертый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/5_5.jpg" alt="Пятый слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/6_6.jpg" alt="Шестой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/7_7.jpg" alt="Седьмой слайд">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 image" src="img/8_8.jpg" alt="Восьмой слайд">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 image" src="img/9_9.jpg" alt="Девятый слайд">
+              </div>
+            </div>
+            <!-- далее идут кнопки карусели -->
+            <a class="carousel-control-prev iconBox" href="#carouselExampleControlsNine" role="button" data-slide="prev">
+              <span ><img class="icons" src="img/left.png" style="transform: rotate(180deg);" alt=""></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next iconBox" href="#carouselExampleControlsNine" role="button" data-slide="next">
+              <span ><img class="icons" src="img/left.png" alt=""></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- тут "карусель" закончилась -->
+  </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="circleBox">
+        <a href="#" class="d-flex circle">
+          <p>LOAD MORE</p>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between footerTopBox">
+      <div class="d-flex footerBox">
+        <a href="#" class="footer">ABOUT US</a>
+        <a href="#" class="footer"> SUPPORT</a>
+        <a href="#" class="footer">BLOG</a>
+        <a href="#" class="footer">PRESS</a>
+        <a href="#" class="footer">API</a>
+        <a href="#" class="footer">JOBS</a>
+        <a href="#" class="footer">PRIVASY</a>
+        <a href="#" class="footer">TERMS</a>
+        <a href="#" class="footer">LANGUAGE</a>
+      </div>
+      <a href="#" class="footerCopy">&copy; 2016 INSTAGRAM</a>
+    </div>
+  </div>
+  <div class="headerLine"></div>
+  <div class="underHeaderLine"></div>
+  <script>
+    var $page = $('html, body');
+    $('a[href*="#"]').click(function () {
+      $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 400);
+      return false;
+    });
+    test.onclick = function(){
+      let a = e.target.id;
+      switch (a) {
+      case test:
+        alert ("Это первая картинка!");
+        break;
+      case 2:
+        alert ("Это вторая картинка!");
+        break;
+    }   }
+
+    one.onclick = function(){
+      var id = e.target.id;
+      switch (id) {
+      case one:
+        alert ("Это первая картинка!");
+        break;
+      case 2:
+        alert ("Это вторая картинка!");
+        break;
+    }   }
+
+  </script>
+</body>
+
+</html>

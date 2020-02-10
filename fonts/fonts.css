@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Regular.otf") format("truetype"); 
+    font-style: 400; 
+    font-weight: normal;  
+}
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Light.otf") format("truetype"); 
+    font-style: 300; 
+    font-weight: normal;  
+}
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Bold.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

@@ -1,0 +1,440 @@
+@import "../fonts/fonts.css" screen;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fafafa;
+}
+.containerCSS {
+    padding-left: 103px;
+    padding-right: 103px;
+}
+.searchForm {
+width: 216px;
+height: 28px;
+border-radius: 14px;
+border: 1px solid #edeeee;
+background-color: #fafafa;
+outline: none;
+font-family: "Proxima Nova";
+font-weight: 300;
+}
+.search {
+    justify-content: center;
+}
+.twoButtons {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.searchForm:focus {
+    background: url(../img/SearchIcon.svg) no-repeat 7px;
+    background-size: auto 50%;
+    padding-left: 30px;
+}
+::-webkit-input-placeholder { 
+    color: #84878a;
+    background: url(../img/SearchIcon.svg) no-repeat 72px 5px;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    padding-left: 5px;
+}
+.searchForm:focus::-webkit-input-placeholder { color: transparent; background: transparent; }
+
+.header {
+    height: 85px ;
+    background-color: #ffffff;
+}
+.headerLine {
+    display: block;
+    width: 100%;
+    height: 85px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.underHeaderLine {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #edeeee;
+    position: absolute;
+    top: 85px;
+    z-index: 1;
+}
+
+.getTheApp {
+    width: 124px; 
+    height: 28px;
+    border-radius: 14px;
+    background-color: #4090db;
+    padding: 0px;
+    padding-top: 2px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 700;
+    border: 0px;
+}
+.logIn {
+    padding-left: 21px;
+    padding-top: 2px;
+}
+.LogInBtn {
+    color: #5c5688;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+}
+a:hover {
+    color: #4090db;
+    text-decoration: none;
+}
+.topPhoto {
+    text-align: center;
+    margin-top: 48px;
+}
+.topPhoto>img {
+
+width: 152px;
+height: 152px;
+}
+.about {
+    margin-top: 48px;
+}
+.userName>p {
+color: #4b4f6d;
+font-family: "Proxima Nova";
+font-size: 35px;
+font-weight: 400;
+letter-spacing: -1.4px;
+padding-right: 22px;
+margin-bottom: 5px;
+}
+.follow {
+width: 79px;
+height: 31px;
+border-radius: 3px;
+border: 1px solid #4090db;
+padding: 0px;
+margin-top: 11px;
+color: #4090db;
+font-family: "Proxima Nova";
+font-size: 15px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: -0.6px;
+}
+.firstNameLastName {
+color: #4b4f60;
+font-family: "Proxima Nova";
+font-size: 17px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.2px;
+margin-top: 2px;
+}
+.firstNameLastNameBold {
+font-family: "Proxima Nova";
+font-weight: 700;
+letter-spacing: -0.34px;
+}
+.firstNameLastName>a {
+color: #3d659d;
+font-family: "Proxima Nova";
+font-weight: 400;
+letter-spacing: -0.34px;
+}
+.pofofo {
+    margin-right: 41px;
+    font-size: 17px;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    color: #3d4044;
+    letter-spacing: -0.2px;
+}
+.photoTop {
+    margin-top: 28px;
+}
+.pictures {
+    width: 100%;
+}
+.shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0;
+}
+.shadow:hover {
+    opacity: 0.5;
+}
+.topBoxForPic{
+margin-top: 30px;
+}
+.boxForPic {
+    width: 100%;
+    position: relative;
+}
+.iconBox {
+    opacity: 1;
+}
+.icons {
+    height: 50px;
+}
+.circle {
+	width: 120px;
+	height: 120px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: 2px solid #4090db;
+    align-items: center;
+    transition: 0.5s linear;
+}
+.circleBox {
+    margin-top: 76px;
+    margin-right: 34px;
+    -moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+}
+.circle>p {
+color: #4090db;
+font-family: "Proxima Nova";
+font-size: 12px;
+font-weight: 700;
+margin: 0px;
+margin-left: 25px;
+transition: 0.5s linear;
+}
+.circleBox:hover .circle {
+    background-color: #4090db;
+}
+.circleBox:hover .circle>p {
+    color: #fafafa;
+}
+.footer {
+
+    margin-right: 15px;
+    /* Style for "ABOUT US" */
+color: #125688;
+font-family: "Proxima Nova";
+font-size: 12px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+}
+.footerCopy {
+    margin-top: 65px;
+    margin-right: 0px;
+    /* Style for "ABOUT US" */
+color: #125688;
+font-family: "Proxima Nova";
+font-size: 12px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+}
+.footerBox {
+    margin-top: 65px;
+}
+@media (max-width:1199px){
+    .containerCSS {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width: 991px) {
+ .footerBox {
+     flex-wrap: wrap;
+ }
+ ::-webkit-input-placeholder { background: url(../img/SearchIcon.svg) no-repeat 48px 5px; }}
+@media (max-width: 767px) {
+    ::-webkit-input-placeholder { background: url(../img/SearchIcon.svg) no-repeat 68px 5px; }
+    .header {
+        height: 185px ;
+    }
+    .headerLine {
+        display: block;
+        width: 100%;
+        height: 185px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    }
+    .underHeaderLine {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #edeeee;
+        position: absolute;
+        top: 185px;
+        z-index: 1;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .twoButtons {
+        justify-content: center;
+    }
+    .header {
+        align-items: center;
+    }
+    .circleBox {
+        margin-right: 0px;
+    }
+    .footerBox {
+        flex-direction: column;
+    }
+    .footerTopBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerTopBoxLogin {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        margin-right: 0px;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .containerCSS {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Код для login.html */
+.formGeneral {
+    width: 350px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #edeeee;
+    background-color: #fff;
+}
+.logoLoginPic {
+    width: 175px;
+    height: 51px;
+}
+.inputForm::-webkit-input-placeholder { color: #84878a; }
+.inputForm::-webkit-input-placeholder { background: none; }
+.inputForm::-webkit-input-placeholder { text-align: left; }
+.inputForm {
+    width: 250px;
+    height: 38px;
+    border-radius: 2px;
+    border: 1px solid #edeeee;
+    background-color: #fafafa;
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    font-size: 12px;
+}
+.loginBtn {
+    width: 250px;
+    font-family: "Proxima Nova";
+}
+.justLine {
+    height: 1px;
+    background-color: #edeeee;
+    width: 101px;
+}
+.orBox {
+    width: 250px;
+    font-family: "Proxima Nova";
+}
+.or {
+    color: #999;
+    font-weight: 700;
+    font-size: 14px;
+}
+.footerTopBoxLogin {
+    max-width: 934px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.fbIcon {
+    width: 16px;
+    height: 16px;
+}
+.loginWithFb {
+    color: #385185;
+    font-family: "Proxima Nova";
+    font-weight: 700;
+    font-size: 14px;
+}
+.forgetPass {
+    color: #385185;
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    font-size: 12px;
+}
+.doNotAcc {
+    font-family: "Proxima Nova";
+    color: #262626;
+    font-size: 14px;
+}
+.toReg {
+    font-family: "Proxima Nova";
+    color: #007bff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.instApp {
+    font-family: "Proxima Nova";
+    color: #262626;
+    font-size: 14px;
+}
+.phoneIcon {
+    width: 135px;
+    height: 40px;
+}
+.footerCopyLogin {
+    color: #125688;
+font-family: "Proxima Nova";
+font-size: 12px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+}
+.heightHundred {
+    height: 100%;
+    padding-bottom: 30px;
+}
+@media (max-height: 675px) {
+    .footerTopBoxLogin {
+        position: static;
+        padding-top: 40px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .heightHundred {
+    padding-bottom: 0px;
+    height: auto;
+    }
+}
+@media (max-width: 991px) {
+    .footerBoxLogin {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 767px) {
+    .footerBoxLogin {
+        flex-direction: column;
+    }
+    .footerTopBoxLogin {
+        position: static;
+        padding-top: 30px;
+    }
+    .heightHundred {
+        padding-bottom: 0px;
+        height: auto;
+        }
+}
